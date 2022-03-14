@@ -1,0 +1,421 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+a {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  color: rgb(24, 24, 24);
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Source Serif Pro", serif;
+  font-size: 53px;
+}
+
+/* HEADER */
+header {
+  background-color: #fff;
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  /* box-shadow: rgba(0, 0, 0, 0.048) 0px 6.5px 19.5px 6.5px; */
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+.header-logo {
+  float: left;
+  animation: movedown 1s linear 1;
+  animation-delay: 1s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+@keyframes movedown {
+  0% {
+    transform: translateY(-100px);
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+.header-logo a {
+  font-weight: bold;
+  font-size: 20px;
+  float: left;
+  margin-top: 20px;
+}
+.header-logo img {
+  float: left;
+  margin: 20px 10px;
+}
+
+.header-menu {
+  float: right;
+  line-height: 50px;
+  padding-top: 10px;
+
+  animation: movedown 1s linear 1;
+  animation-delay: 1s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+.header-menu a {
+  margin-left: 30px;
+}
+
+.login {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.login:hover {
+  background-color: #aa756f;
+  transition: 0.3s;
+}
+
+/* TOP PAGE */
+.top {
+  padding: 140px 0 100px 0;
+}
+
+.top h1 {
+  margin-block-start: 0;
+  font-weight: 900;
+}
+
+.title {
+  width: 50%;
+  display: inline-block;
+  top: 0;
+
+  animation: moveright 1s linear 1;
+  animation-delay: 2.5s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveright {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+    visibility: visible;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+.title p {
+  width: 80%;
+  line-height: 1.8;
+}
+
+.download {
+  margin-top: 50px;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+.btn {
+  background-color: rgb(37, 37, 37);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-right: 20px;
+  display: inline-block;
+  border: 2px solid #aa756f00;
+
+  box-shadow: rgb(0 0 0 / 27%) 1px 3.5px 15.5px 3.5px;
+}
+
+.register {
+  background-color: #aa756f;
+  border: 2px solid #aa756f00;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: rgb(37, 37, 37);
+  border: 2px solid #aa756f;
+  transition: 0.5s;
+}
+
+.image {
+  width: 50%;
+  float: right;
+}
+
+.image img {
+  float: right;
+
+  animation: zoomin 1s linear 1;
+  animation-delay: 3s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoomin {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+    visibility: visible;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+  }
+}
+
+/* MAIN */
+
+.main {
+  text-align: center;
+  padding: 60px 0 100px 0;
+}
+
+.heading {
+  color: #aa756f;
+  margin-bottom: 20px;
+  letter-spacing: 4px;
+  font-weight: lighter;
+  margin-bottom: -20px;
+}
+
+.main h1 {
+  padding-bottom: 60px;
+}
+
+.features {
+  margin-top: 60px;
+  justify-content: center;
+  display: flex;
+}
+
+.feature {
+  float: left;
+  width: 30%;
+  margin: 0 45px;
+}
+
+/*  */
+
+.app-wrapper {
+  background-color: rgb(39, 39, 39);
+  padding-bottom: 0;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.content {
+  padding: 0 75px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.col {
+  margin-right: 65px;
+}
+
+.col-text {
+  padding: 75px 1px 1px 1px;
+}
+
+.p-star {
+  margin: 16px 0px -29px 0px;
+}
+
+.teks {
+  color: #9f9f9f;
+  margin-top: -18px;
+  margin-bottom: 25px;
+}
+
+.phone {
+  margin-bottom: -7px;
+}
+
+.fa-star {
+  color: #da9e97;
+  margin-right: 10px;
+}
+
+/* FOOTER */
+footer * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.footer-container {
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  font: white;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.footer-logo {
+  float: left;
+  padding: 0px 20px;
+}
+
+.footer-logo img {
+  float: left;
+  margin: 0 10px;
+}
+
+.footer-logo p {
+  font-weight: bold;
+  font-size: 20px;
+  float: left;
+}
+
+.fbtn-wrapper {
+  padding-top: 60px;
+  margin-top: 10px 0;
+  display: block;
+  position: relative;
+  left: 20px;
+}
+
+.fbtn {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  display: inline-block;
+  background-color: rgb(24, 24, 24);
+  color: white;
+}
+
+.fcontainer {
+  display: inline-block;
+
+  justify-content: space-evenly;
+}
+
+.fcontainer h3 {
+  font: black;
+  padding-bottom: 10px;
+}
+
+.fcontainer li {
+  padding-top: 10px;
+  color: grey;
+}
+
+/*  */
+
+a.btn-google {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+.btn-g {
+  margin: 5px 15px 5px 0px;
+  font-size: 16px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-g:hover {
+  color: #333;
+  text-decoration: none;
+  outline: 0;
+}
+
+.btn-google {
+  color: #fff;
+  background-color: #111;
+  padding: 1px 16px 5px 40px;
+  position: relative;
+  font-weight: 600;
+}
+.btn-google:hover {
+  color: #fff;
+  background-color: #555;
+  transition: 0.3s;
+}
+.btn-google:before {
+  content: "";
+  background-image: url(../img/playstore.png);
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  margin-top: -15px;
+}
+
+.span-google {
+  margin-top: 5px;
+  display: block;
+  margin-bottom: -2px;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+.btn-app {
+  color: #fff;
+  background-color: #111;
+  padding: 1px 16px 5px 40px;
+  position: relative;
+  font-weight: 600;
+}
+.btn-app:hover {
+  color: #fff;
+  background-color: #555;
+  transition: 0.3s;
+}
+.btn-app:before {
+  content: "";
+  background-image: url(../img/appstore.png);
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  margin-top: -15px;
+}
