@@ -26,7 +26,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 10;
-  /* box-shadow: rgba(0, 0, 0, 0.048) 0px 6.5px 19.5px 6.5px; */
+  box-shadow: rgba(0, 0, 0, 0.048) 0px 6.5px 19.5px 6.5px;
 }
 
 .container {
@@ -220,6 +220,20 @@ header {
   margin: 0 45px;
 }
 
+/*form*/
+
+.comment-form{
+  padding-top: 60px;
+  padding-left: 60px;
+  margin: auto;
+  padding-bottom: 100px;
+}
+
+input, textarea{
+  width: 400px;
+  padding: 20px;
+}
+
 /*  */
 
 .app-wrapper {
@@ -277,11 +291,11 @@ ul {
 .footer-container {
   margin: 0;
   padding: 0;
+  background-color: #9f9f9f;
 }
 
 .footer {
   width: 100%;
-  background-color: rgb(255, 255, 255);
   font: white;
   display: flex;
   justify-content: space-around;
@@ -327,7 +341,6 @@ ul {
 
 .fcontainer {
   display: inline-block;
-
   justify-content: space-evenly;
 }
 
